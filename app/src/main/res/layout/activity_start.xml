@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.roskata.musicquizapp.StartActivity"
+    android:background="@color/tan_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_name_label"
+        android:textSize="@dimen/start_view_text_size"
+        android:layout_marginTop="@dimen/result_text_view_margin_top"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="What's Your Name"
+        />
+
+    <ImageView
+        android:contentDescription="@string/start_img"
+        android:layout_width="@dimen/start_view_img_width"
+        android:layout_height="@dimen/start_view_img_height"
+        android:src="@drawable/headphones"
+        android:layout_marginTop="@dimen/start_img_margin_top"/>
+
+    <Button
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/start_quiz_btn"
+        android:textSize="@dimen/start_view_button_text_size"
+        android:onClick="startQuiz"/>
+
+</LinearLayout>
